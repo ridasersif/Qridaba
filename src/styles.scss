@@ -38,34 +38,6 @@
   --auth-gradient: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 40%, #FECACA 100%);
 }
 
-.dark {
-  /* GitHub-inspired Premium Dark Palette */
-  --surface-50: #0d1117;
-  /* Main background (Charcoal) */
-  --surface-100: #161b22;
-  /* Card / Component background */
-  --surface-200: #21262d;
-  /* Hover / Lighter components */
-  --surface-300: #30363d;
-  /* Borders / Dividers */
-  --surface-400: #484f58;
-  /* Muted borders / Secondary hover */
-  --surface-500: #6e7681;
-  /* Muted text / Icons */
-  --surface-600: #8b949e;
-  /* Secondary text */
-  --surface-700: #b1bac4;
-  /* Meta text */
-  --surface-800: #c9d1d9;
-  /* Standard text */
-  --surface-900: #f0f6fc;
-  /* Strong text */
-  --surface-950: #ffffff;
-  /* Pure white */
-
-  --auth-gradient: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-}
-
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   @apply bg-surface-50 text-surface-900 transition-colors duration-300;
@@ -81,9 +53,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-surface-300 dark:bg-surface-700 rounded-full;
+  @apply bg-surface-300 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-surface-400 dark:bg-surface-600;
+  @apply bg-surface-400;
 }
